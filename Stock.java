@@ -3,7 +3,7 @@ package scheduled;
 import java.lang.*;
 import java.util.*;
 
-public final class Stock extends Position {
+final public class Stock extends Position {
     
     Stock (String posinfo) {
         Scanner s = new Scanner(posinfo);
@@ -13,7 +13,7 @@ public final class Stock extends Position {
     }
     
     @Override
-    String getDescription() {
+    public String getDescription() {
         return symbol + " " + Integer.toString(position) + " "
             + Double.toString(cost);
     }

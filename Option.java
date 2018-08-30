@@ -24,7 +24,7 @@ final public class Option extends Position {
     }
     
     @Override
-    String getDescription() {
+    public String getDescription() {
         return symbol + " " + expDate.toString() + " "
             + Double.toString(strike) + " " + right + " "
             + Integer.toString(position) + " " + Double.toString(cost);

@@ -18,6 +18,6 @@ abstract class Position {
     final public double getCost() { return cost; }
     
     // implement by sublasses
-    abstract String getDescription();
+    abstract public String getDescription();
 
 }
